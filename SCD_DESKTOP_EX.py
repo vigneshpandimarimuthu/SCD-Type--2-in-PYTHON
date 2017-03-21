@@ -116,9 +116,9 @@ root.mainloop()
 import smtplib
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login("pythoncod10@gmail.com", "pythontest")
+server.login("FromMail@gmail.com", "password")
 msg = "Finished successfully"
-server.sendmail("pythoncod10@gmail.com", "v.marimuthu@perficient.com", msg)
+server.sendmail("FromMail@gmail.com", "ToMailAddress@domain.com", msg)
 server.quit()
 
 print "FINISHED SUCCESSFULLY"
