@@ -19,17 +19,17 @@ import os
 def mail_fun():
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login("pythoncod10@gmail.com", "pythontest")
+    server.login("FromMail@gmail.com", "password")
     msg = "File is not there in particular directory for the date - " + str(dd)
-    server.sendmail("abc@gmail.com", "v.marimuthu@perficient.com", msg)
+    server.sendmail("FromMail@gmail.com", "ToMail@Domain.com", msg)
     server.quit()
     return ""
 def mail_fun_data():
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login("pythoncod10@gmail.com", "pythontest")
+    server.login("FromMail@gmail.com", "password")
     msg = "File is there in particular directory for the date - " + str(dd) +"\nBut file doesn't have Data"
-    server.sendmail("abc@gmail.com", "v.marimuthu@perficient.com", msg)
+    server.sendmail("FromMail@gmail.com", "ToMail@Domain.com", msg)
     server.quit()
     return ""
 for i in range(1,7) : 
